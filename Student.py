@@ -16,9 +16,12 @@ class Student(Classroom):
         classroomcount += 1
 
     def _setStudentGrades():
+        answer = raw_input ("\nWould you like to enter any grades for this student? Y for 'Yes', N for 'No' \n""
+        if answer =="Y":
         for i in range (10):
-            print "Would you like to enter a grade for 
-            grades[i]= input("Please enter grade number ", i)
+            print "Would you like to enter a grade for this student's assingment # %d ? \n Y for 'Yes', N for 'No'\n" % (i)
+
+            grades[i]= input("Please enter grade number %d " % (i))
         return grades
 
     def _getAbsences():

@@ -3,7 +3,7 @@ Classroom class that is used to create a roster for a class that is able to proc
 
 '''
 class Classroom(object):
-
+    roster ={}
     def __init__(self,className,classDays):
         self.className = className
         self.classDays = classDays
@@ -11,9 +11,11 @@ class Classroom(object):
 '''
 Gets all the student names and stores them in a dictionary(from when a student object is instantiated)
 '''
-    def getStudentNames():
+    def getRosterNames():
+
         pass
 '''
-Gets students grade from the info given in the student class
+Gets students grade from the info given in the student class and sets it into a roster
 '''
-    def 
+    def getStudentGrades():
+        psdd
