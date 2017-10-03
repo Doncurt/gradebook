@@ -15,9 +15,10 @@ class Student(Classroom):
         self.id = idNum
         classroomcount += 1
 
-    def _getStudentGrades():
+    def _setStudentGrades():
         for i in range (10):
+            print "Would you like to enter a grade for 
             grades[i]= input("Please enter grade number ", i)
         return grades
-    
+
     def _getAbsences():
