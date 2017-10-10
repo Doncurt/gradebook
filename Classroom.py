@@ -18,26 +18,26 @@ class Classroom(object):
 '''
 Sets the classroom name for a certin student
 '''
-    def _setClassName(className):
-        return self.className = className
+def _setClassName(className):
+    self.className = className
+    return  className
 '''
 Gets all the student names and stores them in a dictionary(from when a student object is instantiated)
 '''
-    def getRosterNames():
-
-        pass
+def getRosterNames(dict):
+    pass
 '''
 Gets students grade from the info given in the student class and sets it into a roster
 '''
-    def getStudentGrades():
-        pass
+def getStudentGrades():
+    pass
 '''
 Gets the total number of enrolled students in a certain class
 '''
-    def getNumOfStudents():
-        return classroomcount
+def getNumOfStudents():
+    return classroomcount
 '''
 student counter for the class
 '''
-    def studentAdd():
-        pass
+def studentAdd():
+    pass
