@@ -129,4 +129,7 @@ class_days = input("\nNow please enter the days that {0} meets. In MWF or TTH fo
 print (class_days)
 
 #sentinel value for the number of classes
-assingment_number = input("Now please tell me how many assingments are in the class\n")
+assingment_count = input("Now please tell me how many assingments are in the class\n")
+
+for i in range(assingment_count):
+    
