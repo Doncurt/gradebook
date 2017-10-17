@@ -15,43 +15,41 @@ class Classroom(object):
     def __init__(self,className):
         self.className = className
 
+    '''
+    sets the days that the class is meeting
+    '''
+    def _setMeetingDays(self,meet):
+        self.meetingDays = meet
+        return self.meetingDays
+    '''
+    Sets the classroom name for a certain student
+    '''
+    def _setClassName(className):
+        self.className = className
+        return  className
 
+    '''
+    Gets all the student names and stores them in a dictionary(from when a student object is instantiated)
+    '''
+    def _getRosterNames(dict):
 
-'''
-sets the days that the class is meeting
-'''
-def _setMeetingDays():
-    self.meetingDays
-    return meetingDays
-'''
-Sets the classroom name for a certain student
-'''
-def _setClassName(className):
-    self.className = className
-    return  className
+        pass
 
-'''
-Gets all the student names and stores them in a dictionary(from when a student object is instantiated)
-'''
-def _getRosterNames(dict):
-
-    pass
-
-'''
-Gets students grade from the info given in the student class and sets it into a roster
-'''
-def _getStudentGrades():
-    pass
-'''
-Gets the total number of enrolled students in a certain class
-'''
-def _getNumOfStudents():
-    return classroomcount
-'''
-student counter for the class
-'''
-def _studentAdd():
-    pass
+    '''
+    Gets students grade from the info given in the student class and sets it into a roster
+    '''
+    def _getStudentGrades():
+        pass
+    '''
+    Gets the total number of enrolled students in a certain class
+    '''
+    def _getNumOfStudents():
+        return classroomcount
+    '''
+    student counter for the class
+    '''
+    def _studentAdd():
+        pass
 
 '''
 
@@ -126,9 +124,13 @@ Exception handling for things outside of MWF or TTH
 '''
 class_days = input("\nNow please enter the days that {0} meets. In MWF or TTH format \n".format(Classroom1.className))
 #tesing via printingxn
-print (class_days)
+
+Classroom1._setMeetingDays(class_days)
+
+print (Classroom1.meetingDays)
 
 #sentinel value for the number of classes
+
 assingment_count = input("Now please tell me how many assingments are in the class\n")
 
 for i in range(assingment_count):
