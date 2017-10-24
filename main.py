@@ -10,7 +10,7 @@ my reasoning is that you cant have students without a classroom, so all of the s
 class Classroom(object):
     classroomcount = 0
     roster = {}
-    assingments = {}
+    assignments = list("")
     meetingDays = ""
     def __init__(self,className):
         self.className = className
@@ -52,8 +52,37 @@ class Classroom(object):
         pass
 
 '''
+Student class used to hold and proccess only a singluar students information as well as pass data tp the main class
+when ever student class
+'''
+class Student(object):
+    grades = list("")
+    name = ""
+    idnum = ""
 
-This class is mostly for processing user entered information while encaplusating the rest of the functions and such
+    def __init__(self,name,className,id):
+        self.className = className
+        self.name = name
+        self.id = idnum
+
+    def _setName(name):
+        self.name = name
+        return self.name
+'''
+    def _gradeAverages( grades):
+        sum = 0
+        lenth = len(grades)
+        for i in (len(grades)):
+            sum = sum+grades[i]
+            if not grades[i].isdigit():
+                length -= length
+                continue
+        average = sum/length
+        return average
+'''
+'''
+
+This class is mostly for processing user entered information while encapsluating the rest of the functions and such
 
 as such some of the functions will be declared here
 
@@ -128,10 +157,34 @@ class_days = input("\nNow please enter the days that {0} meets. In MWF or TTH fo
 Classroom1._setMeetingDays(class_days)
 
 print (Classroom1.meetingDays)
-
+#Section for filling the List that contains all of the assigments that the students have been given
 #sentinel value for the number of classes
 
-assingment_count = input("Now please tell me how many assingments are in the class\n")
+assignment_count = input("Now please tell me how many assingments are in the class\n")
+# create a dictionary with a set length based on the number of assignents
+print ("\nOK. lets get some assignment names\n")
 
-for i in range(assingment_count):
-    
+for i in range(int(assignment_count)):
+    print ("what is the name of assingment ",i + 1)
+    temp = input("\n")
+    Classroom1.assignments.extend(temp)
+    print ("The assignments given so far are: \n", Classroom1.assignments)
+
+
+print ("Now that we have a class, lets enroll some students")
+grades = [1,2,3,4,5]
+def _gradeAverages(grades):
+    sum = 0
+    length = 0
+    lenth = len(grades)
+    for i in range (len(grades)):
+        sum = sum + grades[i]
+        if grades[i] > 100:
+            length -= length
+            continue
+    average = sum/length
+    return average
+
+average = _gradeAverages(grades)
+
+print (average)
